@@ -1,0 +1,274 @@
+<template lang="pug">
+.home
+  img.main(src="@|bg.jpg|")
+  .big-title 活动介绍
+  .text-box
+    p 新华社北京7月5日电  国家主席习近平5日晚在北京同法国总统马克龙、德国总理默克尔举行视频峰会。
+    p 习近平指出，当前，全球疫情形势依然严峻，经济复苏前景不明。世界比以往任何时候都更需要相互尊重、精诚合作，而不是猜忌对立、零和博弈。希望中欧扩大共识和合作，为妥善应对全球性挑战发挥重要作用。
+    p 第一，坚持正确相互认知。100年来，中国共产党团结带领中国人民开辟了一条符合中国国情并得到人民普遍拥护的发展道路。中方坚守和平、发展、公平、正义、民主、自由的全人类共同价值。中欧本着相互尊重、求同存异原则开展合作，双方全面战略伙伴关系汇聚了彼此之间最大公约数。我们要秉持这一精神，正确看待相互差异，理性处理彼此分歧，牢牢把稳中欧关系前进航向。
+    p 第二，扩大互利共赢合作。中方愿同欧方尽早举行第二十三次中欧领导人会晤，办好战略、经贸、人文、数字、气候领域高级别对话，推进中欧清单产品互认互保，为双方百姓日常生活带来更多实惠。在新冠肺炎疫情防控情况下，不断优化人员往来快捷通道。中国扩大开放的步伐坚定不移，希望欧方按照市场原则为中国企业提供公正、透明、非歧视的营商环境。
+    p 第三，维护真正的多边主义。要维护以联合国为核心的国际体系和以联合国宪章为基础的国际关系基本准则，国际上的事需要大家心平气和商量着办。中方愿同欧方一道，确保昆明《生物多样性公约》第十五次缔约方大会、《联合国气候变化框架公约》第二十六次缔约方会议均取得积极成果，并共同引导世界贸易组织改革朝正确方向发展，相互支持办好北京冬奥会和巴黎夏季奥运会。
+    p 第四，坚持构建总体稳定、均衡发展的大国关系。中国最希望的是发展好自己，而不是取代别人。中方提出共建“一带一路”倡议是要创造更多共同发展的机遇。中方愿同各方加强对话合作，同时坚决捍卫自身主权、安全、发展利益。希望欧方在国际事务中发挥更多积极作用，真正体现战略自主，共同维护好世界和平稳定和发展繁荣。
+  .big-title 活动动态
+  .w1150
+    .lr-box.clear
+      .left.fl
+        plug(_name="module76" _src="https://template.owo.ink/f50ff29e4b9e5690.owo")
+      .right.fr.news-list
+        ul
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+  .w1200
+    .lr-box.clear
+      .left.fl.liuyan
+        .mini-title 领导留言板
+        a.app-link(href="#")
+          img(src="@|app.png|")
+        plug(_name="liuyanCard" _src="./src/page/liuyanCard.owo")
+      .right.fr.lilun
+        .mini-title 理论
+        ul
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          li
+            a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+    .big-title “贵在有理 走好网上群众路线”系列活动
+    //- 下拉视频展开
+    .video-select-box.clear
+      .video-item
+        video(src="https://cunchu.site/show/mp4/dandelion.mp4" controls="controls")
+      .select-item(o-tap="selectVideo")
+        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+        .video https://cunchu.site/show/mp4/dandelion.mp4
+      .select-item(o-tap="selectVideo")
+        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+        .video https://cunchu.site/show/mp4/dandelion.mp4
+      .select-item(o-tap="selectVideo")
+        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+        .video https://cunchu.site/show/mp4/dandelion.mp4
+      .select-item(o-tap="selectVideo")
+        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+        .video https://cunchu.site/show/mp4/dandelion.mp4
+      .select-item(o-tap="selectVideo")
+        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+        .video https://cunchu.site/show/mp4/dandelion.mp4
+      .select-item(o-tap="selectVideo")
+        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+        .video https://cunchu.site/show/mp4/dandelion.mp4
+      .select-item(o-tap="selectVideo")
+        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+        .video https://cunchu.site/show/mp4/dandelion.mp4
+      .select-item(o-tap="selectVideo")
+        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+        .video https://cunchu.site/show/mp4/dandelion.mp4
+    img.show-more-button(src="@|showmore.png|" o-tap="showMore")
+</template>
+
+<script>
+  module.exports = {
+    selectVideo: function () {
+      this.query('.video-item video').src = this.$target.querySelector('.video').innerText
+    },
+    showMore: function () {
+      document.querySelector('.video-select-box').style.height = 'auto'
+      this.$target.style.display = 'none'
+    }
+  }
+</script>
+
+
+<style lang="less">
+.main {
+  display: block;
+  width: 100%;
+}
+.big-title {
+  background-color: #c13f2f;
+  color: #ffeee1;
+  padding: 5px 50px;
+  width: auto;
+  display: inline-block;
+  font-size: 32px;
+  line-height: 50px;
+  border-radius: 36px;
+  margin: 60px;
+  padding-bottom: 10px;
+}
+.mini-title {
+  background-color: #c13f2f;
+  color: #ffeee1;
+  padding: 5px 35px;
+  width: auto;
+  display: inline-block;
+  font-size: 23px;
+  line-height: 32px;
+  border-radius: 36px;
+  margin: 15px 0;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.text-box {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: left;
+  text-indent: 2em;
+  height: 260px;
+  overflow: auto;
+}
+.news-list {
+  width: 390px;
+  text-align: left;
+  font-size: 16px;
+  li {
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    border-style: dashed;
+    background-image: url('@|doit.png|');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 24px;
+  }
+  ul {
+    margin-top: -10px;
+    height: 462px;
+    overflow: hidden;
+  }
+}
+.lyb {
+  background-color: white;
+  width: 770px;
+  height: 410px;
+  padding: 10px;
+}
+.liuyan {
+  text-align: left;
+  position: relative;
+}
+.app-link {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+.lilun {
+  width: 410px;
+  text-align: left;
+  ul {
+    background-color: white;
+    padding: 14px;
+    font-size: 16px;
+    line-height: 30px;
+    height: 410px;
+    overflow: auto;
+  }
+  li {
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    border-style: dashed;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+.video-select-box {
+  margin-left: -10px;
+  height: 690px;
+  overflow: hidden;
+  .video-item {
+    width: 780px;
+    height: 445px;
+    float: left;
+    margin-left: 20px;
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .select-item {
+    width: 380px;
+    height: 215px;
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      user-select: none;
+      pointer-events: none;
+    }
+    .video {
+      display: none;
+      user-select: none;
+      pointer-events: none;
+    }
+  }
+}
+.show-more-button {
+  display: block;
+  margin: 20px auto;
+}
+</style>

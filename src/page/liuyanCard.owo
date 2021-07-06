@@ -1,0 +1,262 @@
+<template>
+    <div class="lyb clearfix">
+        <div class="ld_tit">
+            <span class="a01 active">
+                领导 | 网友留言
+            </span>
+            <span class="a02">
+                30天回复率排行
+            </span>
+        </div>
+        <div class="ld_ny" style="display: block;">
+            <div class="ld_pic">
+                <div class="clearfix">
+                    <img src="http://gz.people.com.cn/NMediaFile/2021/0618/LOCAL202106181005401794534253648.jpg"
+                    width="110" height="130">
+                    <span>
+                        <b>
+                            贵州省委书记
+                        </b>
+                        <i>
+                            谌贻琴
+                        </i>
+                        <em class="white a01">
+                            <a href="http://ldzl.people.com.cn/dfzlk/front/personPage6423.htm" target="_blank">
+                                简历
+                            </a>
+                        </em>
+                        <em class="white">
+                            <a href="http://liuyan.people.com.cn/threads/list?fid=585" target="_blank">
+                                给她留言
+                            </a>
+                        </em>
+                    </span>
+                </div>
+                <div class="clearfix">
+                    <img src="http://gz.people.com.cn/NMediaFile/2021/0618/LOCAL202106181005522931453372638.jpg"
+                    width="110" height="130">
+                    <span>
+                        <b>
+                            贵州省省长
+                        </b>
+                        <i>
+                            李炳军
+                        </i>
+                        <em class="white a01">
+                            <a href="http://ldzl.people.com.cn/dfzlk/front/personPage6172.htm" target="_blank">
+                                简历
+                            </a>
+                        </em>
+                        <em class="white">
+                            <a href="http://liuyan.people.com.cn/threads/list?fid=586" target="_blank">
+                                给他留言
+                            </a>
+                        </em>
+                    </span>
+                </div>
+            </div>
+            <div class="ld_lb">
+                <ul class="list_16b mt20">
+                    <li>
+                        <a href="/n2/2021/0610/c222152-34771014.html" target="_blank">
+                            人民网网友的这一留言 贵州省省长实地暗访
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://gz.people.com.cn/n2/2021/0610/c222153-34771217.html" target="_blank">
+                            网上群众工作平台成为各地“办实事”好抓手
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/n2/2020/0723/c222153-34178821.html" target="_blank">
+                            "异地办事"烦心？国务院办公厅期待听到您的声音
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/n2/2020/0816/c222153-34229854.html" target="_blank">
+                            “十四五”规划编制工作开展网上意见征集
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/n2/2020/0826/c222153-34253057.html" target="_blank">
+                            各界群众向“十四五”规划编制献计献策
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/n2/2020/0831/c222153-34262078.html" target="_blank">
+                            证监会回复：提升资本市场质量 维护投资者权益
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/n2/2020/1029/c222153-34381589.html" target="_blank">
+                            我为家乡“十四五”规划编制献一策
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ld_ny" style="display: none;">
+            <ul class="list5 mt30 clearfix" id="ldhfl">
+               
+            </ul>
+            <div class="ld_lys clearfix">
+                <span>
+                    昨日留言
+                    <i id="totalThreadsNum">
+                        6878
+                    </i>
+                    条&nbsp;&nbsp;&nbsp;&nbsp;昨日回复
+                    <i id="totalAnswersNum">
+                        2532
+                    </i>
+                    条
+                </span>
+                <em class="white">
+                    <i class="btn2">
+                        <a href="http://liuyan.people.com.cn/home" target="_blank">
+                            查看留言
+                        </a>
+                    </i>
+                    <i class="btn3">
+                        <a href="http://liuyan.people.com.cn/login" target="_blank">
+                            我要留言
+                        </a>
+                    </i>
+                </em>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+  // 领导留言板切换
+  module.exports = {
+    created: function () {
+      new tabIt(document.querySelectorAll('.ld_tit span'), document.querySelectorAll('.ld_ny'))
+      // 排行图表
+      function answerRate(){
+        $.ajax({
+          type: "get",
+          url: "https://messageboard.peopletech.cn/provinceAnswerRate.jsonp",
+          cache: false,
+          scriptCharset:'utf-8',
+          dataType: "jsonp",
+          jsonp: "callback",
+          jsonpCallback: "answerRate",
+          async : false,
+          success: function(data) {
+            //console.log(data);				
+            var lHtml='';
+            var hshuzhi='';
+            var hshuzhi0='';
+            var hshuzhi1='';
+            var tmd;
+            $.each(data,function(i,n){
+              var fn=30-i;
+              hshuzhi=Math.floor(data[fn].num.replace(/[~'!<>@#$%^&*()-+_=:]/g, ""));
+              hshuzhi0=hshuzhi*2
+              hshuzhi1=200-hshuzhi0;
+              //tmd=1-0.05*i;
+              tmd=1;					
+              lHtml += '<li style="margin-top:'+ hshuzhi1 +'px;">'+ hshuzhi/*data[i].num*/ +'%<br /><span style="height:'+ hshuzhi0 +'px;opacity:'+ tmd +';"></span><p>'+ data[fn].name +'</p></li>';
+              //if(i==15){return false;}
+            });
+            $("#ldhfl").html(lHtml);
+          },
+          error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+          }
+        });
+      }
+      answerRate();
+      // 留言条数
+      $.ajax({
+        type: "get",
+        url: "https://messageboard.peopletech.cn/newIndex_stat.jsonp",
+        cache: false,
+        dataType: "jsonp",
+        jsonp: "callback",
+        jsonpCallback: "IndexStat",
+        success: function(data) {
+          //console.log(data);
+          var answersNum = data['answersNum'];
+          var yearAnswersNum = data['yearAnswersNum'];
+          var totalAnswersNum = data['totalAnswersNum'];
+          
+          var threadsNum = data['threadsNum'];
+          var yearThreadsNum = data['yearThreadsNum'];
+          var totalThreadsNum = data['totalThreadsNum'];			
+          $("#totalAnswersNum").html(answersNum);
+          $("#totalThreadsNum").html(threadsNum);
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+          console.log(XMLHttpRequest.status);
+          console.log(XMLHttpRequest.readyState);
+          console.log(textStatus);
+          $(".ld_lys span").remove();
+        }
+      });
+    }
+  }
+</script>
+
+
+<style>
+.lingdao .fl{width:785px;}
+.lingdao .fr{width:390px;}
+.lingdao .fr .list_16b p{ margin:10px 0 0 -15px;}
+.lingdao .lyb{ background:#fff; padding:10px 10px 20px 10px; width:765px; height:390px;}
+.ld_tit{ width:100%; margin:0 auto; border-bottom:1px solid #f1f1f1; padding-bottom:10px; position:relative}
+.ld_tit span{ font-size:20px;color:#272727; font-weight:800; height:38px; line-height:38px;padding:0 20px; display:inline-block;cursor:pointer;}
+.ld_tit span.a02{ position:absolute; right:10px;top:0;}
+.ld_tit span.active{ background:#d12d26; border-radius:15px;color:#fff;}
+.ld_ny{ display:none;}
+.ld_pic{width:375px; float:left}
+.ld_pic div{margin-top:35px;font-size:20px; font-weight:800;}
+.ld_pic div img{ margin:0 20px 0 0px; float:left;}
+.ld_pic div span{ display:block; float:left; width:245px;}
+.ld_pic div span b{ display:block;line-height: 34px;}
+.ld_pic div span i{ display:block; font-size:22px;}
+.ld_pic div span em{ padding:0 10px; display:inline-block; margin-right:10px; background:#d12d26; height:37px; line-height:37px; font-size:14px; margin-top:20px;border-radius:5px; width:auto;}
+.ld_pic div span em.a01{ background:#da8b49;}
+.ld_lb{width:370px; margin-right:0px; float:right;}
+.ld_lb .list_16b li{padding:5px 0;}
+.ld_lys{height:80px;font-size:14px;color:#333;}
+.ld_lys span{line-height:80px;text-indent:32px;float:left;}
+.ld_lys span i{font-style:normal;font-size:24px;font-weight: 500;color: #D23939;padding:0 3px}
+.ld_lys em{float:right;}
+.ld_lys em i{display:inline-block;width:100px;text-align: center;height:36px;line-height:36px;border-radius: 2px;margin-top:22px;margin-right:20px;font-style:normal}
+.ld_lys em i.btn2{background: #E98737;}
+.ld_lys em i.btn3{background:#e60012;}
+.list5 li{float:left;width:22px;text-align: center;margin:0 1px;cursor:pointer; font-size:12px;}
+.list5 li span{width:12px; background:#E98737;display: block;margin:0 auto;height:97px;}
+.list5 li p{ white-space:nowrap; overflow:hidden;}
+.list5 li:hover{color:#CC3232}
+.list5 li:hover span{background:#CC3232;}
+.lingdao .fr h3 img{ vertical-align:bottom; margin-right:5px;}
+.lingdao .fr h3{ font-family:"微软雅黑","Microsoft YaHei"; font-size:26px; font-weight:800; line-height:30px; padding:13px 0; margin-left:10px;}
+.ld_list{background: url(images/bg01.png) no-repeat top center; padding:30px 20px 0 20px; height:389px;}
+.ld_list .list_16b li{ border-bottom:1px dashed #e4e4e3; padding:7px 0;}
+.picg1 li{width:380px;float:left;font-size:22px;line-height:30px;text-align:center; margin-left:30px; background:#fff; padding-bottom:15px;}
+.picg1 li:nth-child(3n+1){ margin-left:0px;}
+.picg1 li span{width:380px;height:208px;display: block;margin-bottom:15px; position:relative;}
+.picg1 li span i{background: url('http://www.people.com.cn/img/MAIN/2020/05/120178/images/vbg1.png') no-repeat;width:38px;height: 38px;position: absolute;display: block;bottom:15px;left:15px;}
+.picg1 li a:hover{ text-decoration:none;}
+.lyb {
+  text-align: left;
+  font: normal 12px/180% "宋体";
+}
+.white, .white a:link, .white a:hover, .white a:visited {
+  color: #fff;
+}
+.list_16b li {
+  font-size: 16px;
+  line-height: 34px;
+  padding: 4px 0;
+}
+.list_16b {
+  margin-top: 25px;
+}
+</style>
