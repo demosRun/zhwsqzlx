@@ -370,7 +370,7 @@ li {
 }
 
 .lyb .picg1 li span i {
-  background: url('http://www.people.com.cn/img/MAIN/2020/05/120178/images/vbg1.png') no-repeat;
+  background: url('../resource/vbg1.png') no-repeat;
   width: 38px;
   height: 38px;
   position: absolute;
@@ -403,6 +403,30 @@ li {
 
 .lyb .list_16b {
   margin-top: 25px;
+}[o-hover="grow"] {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+[o-hover="grow"]:hover, [o-hover="grow"]:focus, [o-hover="grow"]:active {
+  transform: scale(1.1);
+}
+
+#copyright {
+  height: 60px;
+  padding: 40px 0;
+  position: relative;
+  font-size: 14px;
+  height: 60px;
+  color: #000000;
+  z-index: 999;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  background-color: transparent;
 }
 .main {
   display: block;
@@ -563,5 +587,96 @@ li {
 .show-more-button {
   display: block;
   margin: 20px auto;
+  cursor: pointer;
+}
+
+.card-switch-box {
+  margin-top: 60px;
+}
+
+.card-switch-box .title-bar {
+  width: 350px;
+  background-color: #c13f2f;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 28px;
+  margin: 20px auto;
+}
+
+.card-switch-box .title-bar .item {
+  float: left;
+  width: 50%;
+  color: white;
+  font-size: 26px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.card-switch-box .title-bar .item.active {
+  color: #ffcb17;
+}
+
+.card-switch-box li {
+  float: left;
+  background-color: white;
+  height: 320px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 285px;
+  margin: 7px;
+}
+
+.card-switch-box li img {
+  width: 285px;
+  height: 175px;
+  display: block;
+}
+
+.card-switch-box li h4 {
+  color: #664c1e;
+  font-size: 18px;
+  margin: 13px;
+  text-align: left;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.card-switch-box li p {
+  text-align: left;
+  margin: 0 13px;
+  font-size: 14px;
+}
+
+.w1200 #copyright {
+  margin: 0px auto;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  line-height: 180%;
+  clear: both;
+  margin-top: 60px;
+  height: 120px;
+}
+
+.w1200 .lr-box {
+  margin-top: 50px;
+}
+
+.video-panel {
+  margin-top: 30px;
+}
+
+.img-ani {
+  overflow: hidden;
+}
+
+.img-ani img {
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 0.8s;
+}
+
+.img-ani:hover img {
+  transform: scale(1.1);
 }
 

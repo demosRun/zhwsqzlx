@@ -90,40 +90,131 @@
             a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
           li
             a(href="#") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
-    .big-title “贵在有理 走好网上群众路线”系列活动
-    //- 下拉视频展开
-    .video-select-box.clear
-      .video-item
-        video(src="https://cunchu.site/show/mp4/dandelion.mp4" controls="controls")
-      .select-item(o-tap="selectVideo")
-        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
-        .video https://cunchu.site/show/mp4/dandelion.mp4
-      .select-item(o-tap="selectVideo")
-        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
-        .video https://cunchu.site/show/mp4/dandelion.mp4
-      .select-item(o-tap="selectVideo")
-        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
-        .video https://cunchu.site/show/mp4/dandelion.mp4
-      .select-item(o-tap="selectVideo")
-        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
-        .video https://cunchu.site/show/mp4/dandelion.mp4
-      .select-item(o-tap="selectVideo")
-        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
-        .video https://cunchu.site/show/mp4/dandelion.mp4
-      .select-item(o-tap="selectVideo")
-        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
-        .video https://cunchu.site/show/mp4/dandelion.mp4
-      .select-item(o-tap="selectVideo")
-        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
-        .video https://cunchu.site/show/mp4/dandelion.mp4
-      .select-item(o-tap="selectVideo")
-        img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
-        .video https://cunchu.site/show/mp4/dandelion.mp4
-    img.show-more-button(src="@|showmore.png|" o-tap="showMore")
+    .video-panel
+      .big-title “贵在有理 走好网上群众路线”系列活动
+      //- 下拉视频展开
+      .video-select-box.clear
+        .video-item
+          video(src="https://cunchu.site/show/mp4/dandelion.mp4" controls="controls")
+        .select-item.img-ani(o-tap="selectVideo")
+          img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+          .video https://cunchu.site/show/mp4/dandelion.mp4
+        .select-item.img-ani(o-tap="selectVideo")
+          img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+          .video https://cunchu.site/show/mp4/dandelion.mp4
+        .select-item.img-ani(o-tap="selectVideo")
+          img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+          .video https://cunchu.site/show/mp4/dandelion.mp4
+        .select-item.img-ani(o-tap="selectVideo")
+          img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+          .video https://cunchu.site/show/mp4/dandelion.mp4
+        .select-item.img-ani(o-tap="selectVideo")
+          img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+          .video https://cunchu.site/show/mp4/dandelion.mp4
+        .select-item.img-ani(o-tap="selectVideo")
+          img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+          .video https://cunchu.site/show/mp4/dandelion.mp4
+        .select-item.img-ani(o-tap="selectVideo")
+          img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+          .video https://cunchu.site/show/mp4/dandelion.mp4
+        .select-item.img-ani(o-tap="selectVideo")
+          img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+          .video https://cunchu.site/show/mp4/dandelion.mp4
+    img.show-more-button(src="@|showmore.png|" o-tap="showMore" o-hover="grow")
+    .card-switch-box
+      .title-bar.clear
+        .item(style="border-right: 1px solid #ccc;") 省直单位
+        .item(style="border-left: 1px solid #ccc;") 市洲单位
+      ul.clear
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+      ul.clear
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 2测试文字测试文字测试文字测试文字测试文字测试文字
+            p 2测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 2测试文字测试文字测试文字测试文字测试文字测试文字
+            p 2测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+        li
+          a(href="#")
+            img(src="http://www.people.com.cn/NMediaFile/2021/0706/MAIN202107061105308452610609941.jpg")
+            h4 测试文字测试文字测试文字测试文字测试文字测试文字
+            p 测试文字测试文字测试文字
+    plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
 </template>
 
 <script>
   module.exports = {
+    created: function () {
+      new tabIt(document.querySelectorAll('.card-switch-box .item'), document.querySelectorAll('.card-switch-box ul'))
+    },
     selectVideo: function () {
       this.query('.video-item video').src = this.$target.querySelector('.video').innerText
     },
@@ -270,5 +361,85 @@
 .show-more-button {
   display: block;
   margin: 20px auto;
+  cursor: pointer;
+}
+.card-switch-box {
+  margin-top: 60px;
+  .title-bar {
+    width: 350px;
+    background-color: #c13f2f;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 28px;
+    margin: 20px auto;
+    .item {
+      float: left;
+      width: 50%;
+      color: white;
+      font-size: 26px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    .item.active {
+      color: #ffcb17;
+    }
+  }
+  li {
+    float: left;
+    background-color: white;
+    height: 320px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 285px;
+    margin: 7px;
+    img {
+      width: 285px;
+      height: 175px;
+      display: block;
+    }
+    h4 {
+      color: #664c1e;
+      font-size: 18px;
+      margin: 13px;
+      text-align: left;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: left;
+      margin: 0 13px;
+      font-size: 14px;
+    }
+    
+  }
+}
+.w1200 #copyright {
+  margin: 0px auto;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  line-height: 180%;
+  clear: both;
+  margin-top: 60px;
+  height: 120px;
+}
+.w1200 .lr-box {
+  margin-top: 50px;
+}
+.video-panel {
+  margin-top: 30px;
+}
+.img-ani {
+  overflow: hidden;
+  img {
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform 0.8s;
+  }
+}
+.img-ani:hover {
+  img {
+    transform: scale(1.1);
+  }
 }
 </style>
